@@ -13,7 +13,9 @@ namespace VinterITS32019Eksamen
             IFitnessRatingCalculatorStrategy fitnessRatingCalculatorStrategy = new MaxFitnessRatingStrategy();
 
             //Read configuration from file
-            //var systemConfiguration = ConfigurationSerialization.Load(@"..\..\fitnessratingconfig.xml");
+            Configuration systemConfiguration = ConfigurationSerialization.Load(@"..\..\..\fitnessRatingConfig.xml");
+            var vO2Sensor = VO2SensorFactory.CreateVO2Sensor(systemConfiguration.VO2SensorType);
+
 
             //Initialize system
             //Producer
