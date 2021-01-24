@@ -17,7 +17,7 @@ namespace VinterITS32019Eksamen
 
         public void Update()
         {
-            if (_fitnessRatingControlConsumer.isActive == false)
+            if (_fitnessRatingControlConsumer.isActive)
             {
                 _fitnessRatingControlConsumer.Start();
             }

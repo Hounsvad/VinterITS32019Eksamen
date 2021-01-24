@@ -57,15 +57,15 @@ namespace VinterITS32019Eksamen
         {
             try
             {
-                //Notify();
-                if (isActive)
-                {
-                    Start();
-                }
-                else if (!isActive)
-                {
-                    Stop();
-                }
+                Notify();
+                //if (isActive)
+                //{
+                //    Start();
+                //}
+                //else if (!isActive)
+                //{
+                //    Stop();
+                //}
             }
             catch (InvalidOperationException)
             {

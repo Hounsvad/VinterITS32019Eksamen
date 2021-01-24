@@ -23,7 +23,7 @@ namespace VinterITS32019Eksamen
             FitnessRatingControlConsumer fitnessRatingControlConsumer = new FitnessRatingControlConsumer(_vo2DataCollection, fitnessRatingCalculatorStrategy);
 
             var rapport =
-                new RapportConcreteObserver(new MaxFitnessRatingStrategy(), fitnessRatingControlConsumer);
+                new RapportConcreteObserver(fitnessRatingCalculatorStrategy, fitnessRatingControlConsumer);
 
 
             //Run System
